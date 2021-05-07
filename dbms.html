@@ -1,0 +1,74 @@
+<!DOCTYPE HTML> 
+
+<html>  
+   <head> 
+     <title>INVENTORY SYSTEM</title>
+     <link href="style.css" rel="stylesheet">
+   </head> 
+  
+   <body> 
+       <br>
+    <button id="create">Create</button>
+    <button id="btn">View</button>
+    <button id="del">Delete</button>
+    <button id="ins">Insert</button>
+    <br><br>
+      <div id="container">
+      <form id="form">
+          <input type="number" id="id" placeholder="ID"><br>
+          <input type="text" id="name" placeholder="Product Name"><br>
+          <input type="number" id="quanity" placeholder="Quantity"><br><br>
+          <button type="button" id="add">Add</button>
+      </form>
+      </div>
+     
+      </div>
+      <div id="content">
+          <div id="options">
+        <div id="search-container">
+            <br>
+            <form id="search-form">
+                <select id="col">
+                    <option value="id">ID</option>
+                    <option value="name">NAME</option>
+                    <option value="qty">Quantity</option>
+                </select><br>
+                <input type="text" placeholder="search"><br>
+                <button id="search" type="button">Search</button>
+            </form>
+            </div>
+            <div id="update-container">
+            <form id="update-form">
+                <select id="col">
+                    <option value="name">NAME</option>
+                    <option value="qty">Quantity</option>
+                </select><br>
+                <input type="text" placeholder="id value"><br>
+                <input type="text" placeholder="old value"><br>
+                <input type="text" placeholder="new value"><br>
+                <button id="update" type="button">Update</button>
+            </form>
+        </div>
+        <div id="delete-container">
+            <form id="delete-form">
+                <select id="col">
+                    <option value="id">ID</option>
+                    <option value="name">NAME</option>
+                </select><br>
+                <input type="text" placeholder="value"><br>
+                <button id="delete" type="button">Delete</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+      <div id="table">
+        <p id="status">NO DATA</p>
+    </div>
+      </div>
+      
+
+
+
+     <script src="script.js"> </script> 
+   </body> 
+</html>
